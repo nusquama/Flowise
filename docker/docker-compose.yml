@@ -4,10 +4,10 @@ flowise:
 image: flowiseai/flowise
 restart: always
 environment:
-- PORT=$(PORT:-3000}
-- FLOWISE_USERNAME=${FLOWISE_USERNAME:-user)
+- PORT=${PORT:-3000}
+- FLOWISE_USERNAME=${FLOWISE_USERNAME:-user}
 - FLOWISE_PASSWORD=${FLOWISE_PASSWORD:-password}
-- FLOWISE_SECRETKEY_OVERWRITE=${FLOWISE_SECRETKEY_OVERWRITE:-myencryptionkey)
+- FLOWISE_SECRETKEY_OVERWRITE=${FLOWISE_SECRETKEY_OVERWRITE:-myencryptionkey}
 ports:
 - 'S{PORT:-3000}:${PORT:-3001}'
 volumes:
