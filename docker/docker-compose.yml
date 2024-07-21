@@ -9,7 +9,7 @@ environment:
 - FLOWISE_PASSWORD=${FLOWISE_PASSWORD:-password}
 - FLOWISE_SECRETKEY_OVERWRITE=${FLOWISE_SECRETKEY_OVERWRITE:-myencryptionkey)
 ports:
-- 'S{PORT:-3000}:$(PORT:-3001)}'
+- 'S{PORT:-3000}:${PORT:-3001}'
 volumes:
 I
 - ~/.flowise:/root/.flowise
